@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../Media-query/css/stylequery.css".css">
+</head>
+<body>
+    <center>
+        <h1>Contador</h1>
+        <h1 id="contar"></h1>
+        <br><button onclick="Adicionar()">Adicionar</button>
+        <button onclick="Subtrair()">Subtrair</button>
+        <br><img src="../Media-query/img/mauel.png">
+    </center>
+
+    <script>
+        var conta = 0;
+        function Adicionar(){
+            conta++;
+            atualizar();
+        }
+        function Subtrair(){
+            conta--;
+            atualizar();
+        }
+        function atualizar(){
+            var contarelem = document.getElementById("contar");
+            contarelem.textContent = conta;
+        }
+    </script>
+</body>
+</html>
